@@ -1,0 +1,21 @@
+<div class="rpan">
+<div id="countercol">
+<div class="padlr">
+
+<div class="col0rn">
+<div class="rncont">
+<div class="rnhdbak">
+<span class="rnhd1">&nbsp;</span><span class="rnhd2">Recent Blogs:</span><span class="rnhd3">&nbsp;</span>
+</div>
+<div class="rnbody" *ngFor="let rest of res">
+<div class="upd" >
+<div class="heditem"><div class="ago">{{rest.PublishedDate}}</div>
+<cite>{{rest.Tag}} / {{rest.SubTag}}:</cite><br>
+<a class="nfdl ourh" href="{{rest.TopicUrl}}">{{rest.TopicName}} -- {{rest.TopicDescription}}</a>
+</div>
+<div id="more_new" style="display: none;">
+</div>
+</div>
+</div>
+<div class="rnftbak">&nbsp;</div>
+

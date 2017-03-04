@@ -1,0 +1,20 @@
+[
+    {
+    "Tag" : "Angular2",
+    "SubTag": "webpack",
+    "TopicId":"01",
+    "TopicName":"Creating webpack in Angular2",
+    "TopicUrl":"../creating-webpack-in-angular2-01",
+    "TopicDescription":"There are two ways to create an Angular2 application. One is through system.js and the other is through webpack. See how webpacks are better than systemjs",
+    "PublishedDate":"2-February-2017"
+    },
+    {
+      "Tag" : "Angular2",
+      "SubTag": "webpack",
+      "TopicId":"02",
+      "TopicName":"Creating webpack in Angular2",
+      "TopicUrl":"creating-webpack-in-angular2-02",
+      "TopicDescription":"There are two ways to create an Angular2 application. One is through system.js and the other is through webpack. See how webpacks are better than systemjs",
+      "PublishedDate":"25/02/2017"
+    }
+]

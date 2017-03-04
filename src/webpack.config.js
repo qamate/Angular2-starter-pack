@@ -1,18 +1,25 @@
 var webpack=require('webpack');
+var HtmlWebPackPlugin=require('html-webpack-plugin');
 
 module.exports={
-    entry:'F:\\web-pack2\\web-pack\\src\\main.ts',
+    entry:'F:\\Angular2-starter-pack\\src\\main.ts',
     output:{
-        path:'F:\\web-pack2\\web-pack\\dist',
+        path:'F:\\Angular2-starter-pack\\dist',
         filename:'app.bundle.js'
     },
     module:{
         loaders:[
-            { test:/\.ts$/,loader:'ts-loader'}
+            { test:/\.ts$/,loader:'ts-loader'},
+            { test: /\.html/,loader: 'raw'}
         ]
     },
     resolve:{
         extensions:['*','.js','.ts']
-    }
+    },
+    plugin:[
+        new HtmlWebPackPlugin({
+            template:'./index.html'
+        })
+    ]
 
 }

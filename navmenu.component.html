@@ -1,0 +1,15 @@
+<p *ngIf="!routing"><em>Loading...</em></p>
+
+<DIV STYLE="float:left;margin-left: 30px;">
+<DIV CLASS="col0rn">
+<DIV ID="preflink" [routerLinkActive]="['link-active']" *ngFor="let route1 of routing" class="tabs_tab" ng-class="activeClass == 'dashboard' ? 'active' : 'unActive'">
+<h2><a [routerLink]="route1.routeKey" class="text-black">{{route1.routeValue}}</a></h2>
+</DIV>
+</DIV>
+</DIV>
+<div align="right" style="margin-right:2.3em;">
+<form name="input"><a href="http://stackoverflow.com/users/4950795/staticvoidmain" target="_blank">
+<img src="https://stackoverflow.com/users/flair/4950795.png" width="150" height="58" alt="profile for staticvoidmain at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for staticvoidmain at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+</a></form>
+</div>
+<div style="clear:both;"></div>
